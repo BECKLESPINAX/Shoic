@@ -1,0 +1,950 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:dt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+b\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Ataque SHOIC HTTP</title>
+<style>
+<!--
+ /* Definiciones de fuente */
+@font-face
+	{font-family:"Times New Roman";
+	panose-1:2 2 6 3 5 4 5 2 3 4;}
+ /* Definiciones de estilo */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+	text-align:left;
+	font-family:"Times New Roman";
+	font-size:10.0pt;
+	color:black;}
+p.MsoOrganizationName, li.MsoOrganizationName, div.MsoOrganizationName
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+	text-align:left;
+	font-family:"Times New Roman";
+	font-size:11.0pt;
+	color:black;
+	font-weight:bold;}
+p.MsoTagline, li.MsoTagline, div.MsoTagline
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+	line-height:113%;
+	text-align:left;
+	font-family:"Times New Roman";
+	font-size:10.0pt;
+	color:black;
+	font-style:italic;
+	letter-spacing:1.0pt;}
+p.MsoBodyText3, li.MsoBodyText3, div.MsoBodyText3
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:6.0pt;
+	line-height:110%;
+	text-align:left;
+	font-family:"Times New Roman";
+	font-size:10.0pt;
+	color:black;}
+p.MsoTitle3, li.MsoTitle3, div.MsoTitle3
+	{margin-right:0pt;
+	text-indent:0pt;
+	margin-top:0pt;
+	margin-bottom:0pt;
+	line-height:113%;
+	text-align:left;
+	font-family:"Times New Roman";
+	font-size:16.0pt;
+	color:#666633;
+	font-weight:bold;
+	text-transform:uppercase;
+	letter-spacing:1.75pt;}
+ol
+	{margin-top:0in;
+	margin-bottom:0in;
+	margin-left:-2197in;}
+ul
+	{margin-top:0in;
+	margin-bottom:0in;
+	margin-left:-2197in;}
+@page
+	{size:8.0302in 11.0in;}
+-->
+</style>
+</head>
+
+<body link=navy vlink="#660099" style='margin:0'>
+
+<div style='position:absolute;width:7.-71in;height:34.1709in'>
+<!--[if gte vml 1]><v:rect id="_x0000_s1210" alt="" style='position:absolute;
+ left:133.5pt;top:70.5pt;width:436.45pt;height:2422.5pt;z-index:81;
+ visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+ mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+ mso-wrap-distance-bottom:2.88pt' fillcolor="#e1e1d6 [2 lighten(128)]"
+ stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:fill rotate="t"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:81;
+left:178px;top:94px;width:582px;height:3230px'><img width=582 height=3230
+src=image396.gif v:shapes="_x0000_s1210"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1211" alt="" style='position:absolute;left:0;top:70.5pt;width:133.5pt;
+ height:721.5pt;z-index:82;visibility:visible;mso-wrap-edited:f;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#f3f3ef [2 lighten(51)]"
+ stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:fill rotate="t"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:82;
+left:0px;top:94px;width:178px;height:962px'><img width=178 height=962
+src=image322.gif v:shapes="_x0000_s1211"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1212" alt="" style='position:absolute;left:0;top:119.89pt;width:66.84pt;
+ height:144.85pt;flip:x;z-index:83;visibility:visible;mso-wrap-edited:f;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image323.wmz" o:title="NA02126_" croptop="-6362f"
+  cropbottom="-16399f" cropleft="-7519f" cropright="32500f" recolortarget="#e7e7df [2 lighten(102)]"/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:83;
+left:0px;top:160px;width:89px;height:193px'><img width=89 height=193
+src=image3231.gif v:shapes="_x0000_s1212"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1213" alt="" style='position:absolute;left:25.63pt;top:198.75pt;
+ width:108.24pt;height:181.49pt;z-index:84;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image323.wmz" o:title="NA02126_" croptop="-6362f"
+  cropbottom="-16399f" cropleft="-7519f" cropright="20642f" recolortarget="#e7e7df [2 lighten(102)]"/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:84;
+left:34px;top:265px;width:144px;height:242px'><img width=144 height=242
+src=image325.gif v:shapes="_x0000_s1213"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1214" alt="" style='position:absolute;left:0;top:355.39pt;width:70.99pt;
+ height:153.85pt;flip:x;z-index:85;visibility:visible;mso-wrap-edited:f;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image323.wmz" o:title="NA02126_" croptop="-6362f"
+  cropbottom="-16399f" cropleft="-7519f" cropright="32500f" recolortarget="#e7e7df [2 lighten(102)]"/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:85;
+left:0px;top:474px;width:95px;height:205px'><img width=95 height=205
+src=image327.gif v:shapes="_x0000_s1214"></span><![endif]><!--[if gte vml 1]><v:group
+ id="_x0000_s1215" style='position:absolute;left:7.12pt;top:70.5pt;width:126pt;
+ height:126pt;z-index:86' coordorigin="1078175,896441" coordsize="16002,16002">
+ <v:rect id="_x0000_s1216" alt="" style='position:absolute;left:1078175;top:896441;
+  width:16002;height:3201;visibility:hidden;mso-wrap-edited:f;
+  mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" insetpen="t"
+  o:cliptowrap="t">
+  <v:stroke dashstyle="1 1" endcap="round">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202"
+  path="m,l,21600r21600,l21600,xe">
+  <v:stroke joinstyle="miter"/>
+  <v:path gradientshapeok="t" o:connecttype="rect"/>
+ </v:shapetype><v:shape id="_x0000_s1217" type="#_x0000_t202" alt="" style='position:absolute;
+  left:1078861;top:896784;width:14630;height:2743;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" insetpen="t"
+  o:cliptowrap="t">
+  <v:stroke dashstyle="dash">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox style='mso-column-margin:5.76pt' inset="2.88pt,0,2.88pt,0">
+   <div dir=ltr style='padding-top:4.5pt'>
+   <p class=MsoNormal style='text-align:center;line-height:113%;text-align:
+   center'><span lang=es style='font-size:9.0pt;line-height:113%;color:black;
+   language:es'>Página principal</span></p>
+   </div>
+  </v:textbox>
+ </v:shape><v:line id="_x0000_s1218" alt="" style='position:absolute;
+  visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+  mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+  mso-wrap-distance-bottom:2.88pt' from="1078175,896556" to="1094177,896556"
+  strokecolor="#663 [1]" strokeweight="1pt" o:cliptowrap="t">
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+ </v:line><v:rect id="_x0000_s1219" alt="" href="../Help.htm" style='position:absolute;
+  left:1078175;top:896441;width:16002;height:3201;visibility:visible;
+  mso-wrap-edited:f' filled="f" fillcolor="white [7]" stroked="f" insetpen="t"
+  o:cliptowrap="t">
+  <v:fill color2="white [7]"/>
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:path strokeok="f" fillok="f"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:shape id="_x0000_s1220" type="#_x0000_t202" alt="" style='position:absolute;
+  left:1078861;top:899985;width:14630;height:2743;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" insetpen="t"
+  o:cliptowrap="t">
+  <v:stroke dashstyle="dash">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox style='mso-column-margin:5.76pt' inset="2.88pt,0,2.88pt,0">
+   <div dir=ltr style='padding-top:4.5pt'>
+   <p class=MsoNormal style='text-align:center;line-height:113%;text-align:
+   center'><span lang=es style='font-size:9.0pt;line-height:113%;color:black;
+   language:es'>Pasos para Atacar</span></p>
+   </div>
+  </v:textbox>
+ </v:shape><v:line id="_x0000_s1221" alt="" style='position:absolute;
+  visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+  mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+  mso-wrap-distance-bottom:2.88pt' from="1078175,899756" to="1094177,899756"
+  strokecolor="#663 [1]" strokeweight="1pt" o:cliptowrap="t">
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+ </v:line><v:rect id="_x0000_s1222" alt="" href="PasosParaAtacar.htm" style='position:absolute;
+  left:1078175;top:899642;width:16002;height:3200;visibility:visible;
+  mso-wrap-edited:f' filled="f" fillcolor="white [7]" stroked="f" insetpen="t"
+  o:cliptowrap="t">
+  <v:fill color2="white [7]"/>
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:path strokeok="f" fillok="f"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:shape id="_x0000_s1223" type="#_x0000_t202" alt="" style='position:absolute;
+  left:1078861;top:903185;width:14630;height:2743;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" insetpen="t"
+  o:cliptowrap="t">
+  <v:stroke dashstyle="dash">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox style='mso-column-margin:5.76pt' inset="2.88pt,0,2.88pt,0">
+   <div dir=ltr style='padding-top:4.5pt'>
+   <p class=MsoNormal style='text-align:center;line-height:113%;text-align:
+   center'><span lang=es style='font-size:9.0pt;line-height:113%;color:black;
+   language:es'>Cambios con respecto a LOIC</span></p>
+   </div>
+  </v:textbox>
+ </v:shape><v:line id="_x0000_s1224" alt="" style='position:absolute;
+  visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+  mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+  mso-wrap-distance-bottom:2.88pt' from="1078175,902956" to="1094177,902956"
+  strokecolor="#663 [1]" strokeweight="1pt" o:cliptowrap="t">
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+ </v:line><v:rect id="_x0000_s1225" alt="" href="Cambios.htm" style='position:absolute;
+  left:1078175;top:902842;width:16002;height:3200;visibility:visible;
+  mso-wrap-edited:f' filled="f" fillcolor="white [7]" stroked="f" insetpen="t"
+  o:cliptowrap="t">
+  <v:fill color2="white [7]"/>
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:path strokeok="f" fillok="f"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:rect id="_x0000_s1226" alt="" style='position:absolute;left:1078175;
+  top:906193;width:16002;height:2743;visibility:visible;mso-wrap-edited:f;
+  mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#e7e7df [2 lighten(102)]"
+  stroked="f" strokecolor="#afaf9c [2 darken(230)]" insetpen="t" o:cliptowrap="t">
+  <v:fill o:opacity2="0" rotate="t" focus="100%" type="gradient"/>
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect><v:shape id="_x0000_s1227" type="#_x0000_t202" alt="" style='position:absolute;
+  left:1078861;top:906366;width:14630;height:2743;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" insetpen="t"
+  o:cliptowrap="t">
+  <v:stroke dashstyle="dash">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox style='mso-column-margin:5.76pt' inset="2.88pt,0,2.88pt,0">
+   <div dir=ltr style='padding-top:4.5pt'>
+   <p class=MsoNormal style='text-align:center;line-height:113%;text-align:
+   center'><span lang=es style='font-size:9.0pt;line-height:113%;color:black;
+   language:es'>Ataque SHOIC HTTP</span></p>
+   </div>
+  </v:textbox>
+ </v:shape><v:line id="_x0000_s1228" alt="" style='position:absolute;
+  visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+  mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+  mso-wrap-distance-bottom:2.88pt' from="1078175,906176" to="1094177,906176"
+  strokecolor="#663 [1]" strokeweight="1pt" o:cliptowrap="t">
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+ </v:line><v:shape id="_x0000_s1229" type="#_x0000_t202" alt="" style='position:absolute;
+  left:1078861;top:909586;width:14630;height:2743;visibility:visible;
+  mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+  mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+  fillcolor="white [7]" stroked="f" strokecolor="black [0]" insetpen="t"
+  o:cliptowrap="t">
+  <v:stroke dashstyle="dash">
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox style='mso-column-margin:5.76pt' inset="2.88pt,0,2.88pt,0">
+   <div dir=ltr style='padding-top:4.5pt'>
+   <p class=MsoNormal style='text-align:center;line-height:113%;text-align:
+   center'><span lang=es style='font-size:9.0pt;line-height:113%;color:black;
+   language:es'>Configuración</span></p>
+   </div>
+  </v:textbox>
+ </v:shape><v:line id="_x0000_s1230" alt="" style='position:absolute;
+  visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+  mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+  mso-wrap-distance-bottom:2.88pt' from="1078175,909357" to="1094177,909357"
+  strokecolor="#663 [1]" strokeweight="1pt" o:cliptowrap="t">
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:shadow color="#ccc [4]"/>
+ </v:line><v:rect id="_x0000_s1231" alt="" href="Configuracion.htm" style='position:absolute;
+  left:1078175;top:909243;width:16002;height:3200;visibility:visible;
+  mso-wrap-edited:f' filled="f" fillcolor="white [7]" stroked="f" insetpen="t"
+  o:cliptowrap="t">
+  <v:fill color2="white [7]"/>
+  <v:stroke>
+   <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+   <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+  </v:stroke>
+  <v:path strokeok="f" fillok="f"/>
+  <o:lock v:ext="edit" shapetype="t"/>
+  <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+ </v:rect></v:group><![endif]--><![if !vml]><span style='position:absolute;
+z-index:86;left:8px;top:94px;width:171px;height:168px'><map
+name=MicrosoftOfficeMap0><area shape=Rect
+coords="2, 134, 170, 168" href="Configuracion.htm"><area shape=Rect
+coords="2, 67, 170, 101" href="Cambios.htm"><area shape=Rect
+coords="2, 34, 170, 67" href="PasosParaAtacar.htm"><area shape=Rect
+coords="2, 0, 170, 34" href="../Help.htm"></map><img border=0 width=171
+height=168 src=image595.gif usemap="#MicrosoftOfficeMap0" v:shapes="_x0000_s1215 _x0000_s1217 _x0000_s1218 _x0000_s1219 _x0000_s1220 _x0000_s1221 _x0000_s1222 _x0000_s1223 _x0000_s1224 _x0000_s1225 _x0000_s1226 _x0000_s1227 _x0000_s1228 _x0000_s1229 _x0000_s1230 _x0000_s1231"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1232" alt="" style='position:absolute;left:0;top:23.12pt;width:133.5pt;
+ height:47.38pt;z-index:87;visibility:visible;mso-wrap-edited:f;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#afaf9c [2 darken(230)]"
+ stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:87;
+left:0px;top:31px;width:178px;height:63px'><img width=178 height=63
+src=image418.gif v:shapes="_x0000_s1232"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1233" alt="" style='position:absolute;left:15.07pt;top:17.89pt;
+ width:103.33pt;height:52.6pt;z-index:88;visibility:visible;mso-wrap-edited:f;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image323.wmz" o:title="NA02126_" croptop="-6362f"
+  cropbottom="32737f" cropleft="-7519f" cropright="-3518f" recolortarget="#c2c2ad [2]"/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:88;
+left:20px;top:24px;width:138px;height:70px'><img width=138 height=70
+src=image419.gif v:shapes="_x0000_s1233"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1234" alt="" style='position:absolute;left:0;top:0;width:133.5pt;
+ height:23.79pt;z-index:89;visibility:visible;mso-wrap-edited:f;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' fillcolor="#515128 [1 darken(204)]"
+ stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:89;
+left:0px;top:0px;width:178px;height:32px'><img width=178 height=32
+src=image421.gif v:shapes="_x0000_s1234"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1235" alt="" style='position:absolute;left:0;top:22.67pt;width:36.46pt;
+ height:47.79pt;z-index:90;visibility:visible;mso-wrap-edited:f;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image323.wmz" o:title="NA02126_" croptop="20488f"
+  cropleft="31325f" recolortarget="#c2c2ad [2]"/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:90;
+left:0px;top:30px;width:49px;height:64px'><img width=49 height=64
+src=image422.gif v:shapes="_x0000_s1235"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1236" alt="" style='position:absolute;left:.63pt;top:.43pt;
+ width:34.35pt;height:20.27pt;z-index:91;visibility:visible;mso-wrap-edited:f;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image323.wmz" o:title="NA02126_" croptop="8526f"
+  cropbottom="37207f" cropleft="32125f" recolortarget="#663 [1]"/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:91;
+left:1px;top:1px;width:46px;height:27px'><img width=46 height=27
+src=image424.gif v:shapes="_x0000_s1236"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1237" alt="" style='position:absolute;left:446.96pt;top:18.94pt;
+ width:101.29pt;height:51.55pt;z-index:92;visibility:visible;mso-wrap-edited:f;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image323.wmz" o:title="NA02126_" croptop="-6362f"
+  cropbottom="32737f" cropleft="-7519f" cropright="-3518f" recolortarget="#edede7 [2 lighten(77)]"/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:92;
+left:596px;top:25px;width:135px;height:69px'><img width=135 height=69
+src=image347.gif v:shapes="_x0000_s1237"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1238" type="#_x0000_t202" style='position:absolute;left:330.75pt;
+ top:53.25pt;width:225.75pt;height:16.5pt;z-index:93;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="black [0]" stroked="f" strokecolor="black [0]" strokeweight="0"
+ o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke>
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:5.7pt' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><![if !vml]><span style='position:absolute;z-index:93;
+left:441px;top:71px;width:301px;height:22px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=301 height=22 style='vertical-align:top'><![endif]>
+  <div v:shape="_x0000_s1238" style='padding:2.85pt 2.85pt 2.85pt 2.85pt'
+  class=shape>
+  <p class=MsoTagline style='text-align:right;text-align:right'><span lang=es
+  style='font-size:8.6pt;line-height:113%;language:es'>Anonymous Somos Todos.</span></p>
+  </div>
+  <![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><!--[if gte vml 1]><v:rect id="_x0000_s1239" alt="" style='position:absolute;
+ left:96.28pt;top:22.7pt;width:36.47pt;height:47.79pt;flip:x;z-index:94;
+ visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+ mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+ mso-wrap-distance-bottom:2.88pt' filled="f" fillcolor="white [7]" stroked="f"
+ strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image323.wmz" o:title="NA02126_" croptop="20488f"
+  cropleft="31325f" recolortarget="#c2c2ad [2]"/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:94;
+left:128px;top:30px;width:49px;height:64px'><img width=49 height=64
+src=image430.gif v:shapes="_x0000_s1239"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1240" alt="" style='position:absolute;left:97.76pt;top:.47pt;
+ width:34.35pt;height:20.26pt;flip:x;z-index:95;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image323.wmz" o:title="NA02126_" croptop="8526f"
+  cropbottom="37207f" cropleft="32125f" recolortarget="#663 [1]"/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:95;
+left:130px;top:1px;width:46px;height:27px'><img width=46 height=27
+src=image432.gif v:shapes="_x0000_s1240"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1241" alt="" style='position:absolute;z-index:96;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="0,22.37pt"
+ to="133.48pt,22.37pt" strokecolor="#663 [1]" strokeweight="2.25pt"
+ o:cliptowrap="t">
+ <v:stroke>
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+</v:line><![endif]--><![if !vml]><span style='position:absolute;z-index:96;
+left:-2px;top:28px;width:182px;height:4px'><img width=182 height=4
+src=image355.gif v:shapes="_x0000_s1241"></span><![endif]><!--[if gte vml 1]><v:line
+ id="_x0000_s1242" style='position:absolute;z-index:97;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' from="0,70.5pt"
+ to="569.95pt,70.5pt" strokecolor="#663 [1]" strokeweight="1pt" o:cliptowrap="t">
+ <v:stroke>
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+</v:line><![endif]--><![if !vml]><span style='position:absolute;z-index:97;
+left:-1px;top:93px;width:762px;height:2px'><img width=762 height=2
+src=image356.gif v:shapes="_x0000_s1242"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1243" type="#_x0000_t202" style='position:absolute;left:144.87pt;
+ top:70.5pt;width:417.88pt;height:73.5pt;z-index:98;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="black [0]" stroked="f" strokecolor="#c2c2ad [2]" strokeweight="0"
+ o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke dashstyle="dash">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:5.7pt' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><![if !vml]><span style='position:absolute;z-index:98;
+left:193px;top:94px;width:558px;height:98px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=558 height=98 style='vertical-align:top'><![endif]>
+  <div v:shape="_x0000_s1243" style='padding:2.85pt 2.85pt 2.85pt 2.85pt'
+  class=shape>
+  <p class=MsoTitle3 style='text-align:center;text-align:center'><span lang=es
+  style='language:es'>&nbsp;</span></p>
+  <p class=MsoTitle3 style='text-align:center;text-align:center'><span lang=es
+  style='language:es'>Ataque shoic http</span></p>
+  <p class=MsoTitle3 style='text-align:center;text-align:center'><span lang=es
+  style='language:es'>&nbsp;</span></p>
+  </div>
+  <![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1244" type="#_x0000_t202"
+ style='position:absolute;left:152.12pt;top:159pt;width:417.88pt;height:181.25pt;
+ z-index:99;visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+ mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+ mso-wrap-distance-bottom:2.88pt' filled="f" fillcolor="black [0]" stroked="f"
+ strokecolor="#c2c2ad [2]" strokeweight="0" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke dashstyle="dash">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:5.7pt' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><![if !vml]><span style='position:absolute;z-index:99;
+left:203px;top:212px;width:558px;height:242px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=558 height=242 style='vertical-align:top'><![endif]>
+  <div v:shape="_x0000_s1244" style='padding:2.85pt 2.85pt 2.85pt 2.85pt'
+  class=shape>
+  <p class=MsoBodyText3><span lang=es style='language:es'> Esta funcionalidad realiza el novedoso ataque SHOIC HTTP, en el cuál en los distintos hilos se van realizando peticiones desde distintos proxys que debes ingresar presionando en el botón “Configuración”.</span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>  AL ejecutar este tipo de ataque, se mostrará una ventana llamada “Esquirlas”, donde se mostrará cada proxy que se vaya recorriendo y con el cuál se vaya atacando.</span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>  La cantidad de Esquirlas que se muestren será según la cantidad de Hilos que haya colocado, si coloca 4 Hilos, se mostrarán 4 ventanas de Esquirlas, donde en cada una podrá alterar el orden de la grilla presionando en el título de la columna IP o Puerto.</span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>  Tenga sumo cuidado, este ataque poderoso, puede a su vez ocasionar un cuelgue de la máquina si se colocan demasiados Hilos, nunca es recomendable mas de 10, pero esto es según la Ram que posea y el Procesador.</span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>&nbsp;</span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>  </span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'> </span></p>
+  </div>
+  <![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><!--[if gte vml 1]><v:line id="_x0000_s1245" style='position:absolute;
+ z-index:100;visibility:visible;mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;
+ mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+ mso-wrap-distance-bottom:2.88pt' from="152.87pt,159pt" to="570pt,159pt"
+ strokecolor="black [0]" strokeweight="1.5pt" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+</v:line><![endif]--><![if !vml]><span style='position:absolute;z-index:100;
+left:202px;top:211px;width:559px;height:2px'><img width=559 height=2
+src=image637.gif v:shapes="_x0000_s1245"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1246" type="#_x0000_t202" style='position:absolute;left:138pt;
+ top:531pt;width:417.87pt;height:204pt;z-index:101;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="black [0]" stroked="f" strokecolor="#c2c2ad [2]" strokeweight="0"
+ o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke dashstyle="dash">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:5.7pt' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><![if !vml]><span style='position:absolute;z-index:101;
+left:184px;top:708px;width:558px;height:272px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=558 height=272 style='vertical-align:top'><![endif]>
+  <div v:shape="_x0000_s1246" style='padding:2.85pt 2.85pt 2.85pt 2.85pt'
+  class=shape>
+  <p class=MsoBodyText3><span lang=es style='language:es'>Paso 2:</span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>Opciones de ataque: </span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>  Aquí debe configurar como será el ataque. </span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>  - Coloque un puerto (80 por defecto).</span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>  - Seleccione un método de ataque: Puede ser TCP, UDP, HTTP y el nuevo HTTP SHOIC.</span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>  - Seleccione los Hilos de ataques, es decir, la cantidad de ataques a la vez que se van a ejecutar desde su ordenador, no es recomendable seleccionar mas de 10 Hilos debido a un posible cuelgue por fallas en el motor LOIC que es el corazón de SHOIC.</span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>  -  TCP/UDP mensaje: Puede colocar un mensaje que se envía en el ataque.</span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>  -  Velocidad: Puede configurar la velocidad de ataque, cuanto más rápido, más recursos de su máquina va a usar. Esta opción no está disponible si selecciona ataque SHOIC.</span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'>  </span></p>
+  <p class=MsoBodyText3><span lang=es style='language:es'> </span></p>
+  </div>
+  <![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><!--[if gte vml 1]><v:rect id="_x0000_s1247" alt="" style='position:absolute;
+ left:0;top:0;width:135pt;height:69pt;z-index:102;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image340.jpg" o:title="Anonymous-hacker-hit-US-security-firm"
+  recolortarget="#c2c2ad [2]"/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:102;
+left:0px;top:0px;width:180px;height:92px'><img width=180 height=92
+src=image3401.jpg v:shapes="_x0000_s1247"></span><![endif]><!--[if gte vml 1]><v:rect
+ id="_x0000_s1251" style='position:absolute;left:276pt;top:5in;width:120pt;
+ height:129pt;z-index:104;mso-wrap-distance-left:2.88pt;
+ mso-wrap-distance-top:2.88pt;mso-wrap-distance-right:2.88pt;
+ mso-wrap-distance-bottom:2.88pt' o:preferrelative="t" filled="f" fillcolor="white [7]"
+ stroked="f" strokecolor="black [0]" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image533.png" o:title=""/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:104;
+left:368px;top:480px;width:160px;height:172px'><img width=160 height=172
+src=image5331.gif v:shapes="_x0000_s1251"></span><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_s1255" type="#_x0000_t202" alt="" style='position:absolute;left:261pt;
+ top:12pt;width:181.12pt;height:22.5pt;z-index:108;visibility:visible;
+ mso-wrap-edited:f;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="black [0]" stroked="f" strokecolor="black [0]" strokeweight="0"
+ o:cliptowrap="t">
+ <v:stroke>
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <o:lock v:ext="edit" shapetype="t"/>
+ <v:textbox style='mso-column-margin:5.7pt' inset="2.85pt,2.85pt,2.85pt,2.85pt"/>
+</v:shape><![endif]--><![if !vml]><span style='position:absolute;z-index:108;
+left:348px;top:16px;width:242px;height:30px'>
+
+<table cellpadding=0 cellspacing=0>
+ <tr>
+  <td width=242 height=30 valign=bottom style='vertical-align:top'><![endif]>
+  <div v:shape="_x0000_s1255" style='padding:2.85pt 2.85pt 2.85pt 2.85pt'
+  class=shape>
+  <p class=MsoOrganizationName style='text-align:center;text-align:center'><span
+  lang=es style='font-size:18.0pt;language:es'>Anonymous</span></p>
+  </div>
+  <![if !vml]></td>
+ </tr>
+</table>
+
+</span><![endif]><!--[if gte vml 1]><v:rect id="_x0000_s1260" style='position:absolute;
+ left:138pt;top:741pt;width:411pt;height:256.64pt;z-index:113;
+ mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt'
+ o:preferrelative="t" filled="f" fillcolor="white [7]" stroked="f"
+ strokecolor="black [0]" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:imagedata src="image392.png" o:title=""/>
+ <v:shadow color="#ccc [4]"/>
+ <v:path o:extrusionok="f" insetpenok="f"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:rect><![endif]--><![if !vml]><span style='position:absolute;z-index:113;
+left:184px;top:988px;width:548px;height:342px'><img width=548 height=342
+src=image3921.gif v:shapes="_x0000_s1260"></span><![endif]><!--[if gte vml 1]><v:oval
+ id="_x0000_s1261" style='position:absolute;left:138pt;top:750pt;width:336pt;
+ height:60pt;z-index:114;mso-wrap-distance-left:2.88pt;mso-wrap-distance-top:2.88pt;
+ mso-wrap-distance-right:2.88pt;mso-wrap-distance-bottom:2.88pt' filled="f"
+ fillcolor="white [7]" strokecolor="red" strokeweight="3pt" o:cliptowrap="t">
+ <v:fill color2="white [7]"/>
+ <v:stroke color2="white [7]">
+  <o:left v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:top v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:right v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:bottom v:ext="view" color="black [0]" color2="white [7]"/>
+  <o:column v:ext="view" color="black [0]" color2="white [7]"/>
+ </v:stroke>
+ <v:shadow color="#ccc [4]"/>
+ <v:path insetpenok="f"/>
+ <v:textbox inset="2.88pt,2.88pt,2.88pt,2.88pt"/>
+</v:oval><![endif]--><![if !vml]><span style='position:absolute;z-index:114;
+left:182px;top:998px;width:452px;height:84px'><img width=452 height=84
+src=image436.gif v:shapes="_x0000_s1261"></span><![endif]>
+</div>
+
+</body>
+
+</html>
