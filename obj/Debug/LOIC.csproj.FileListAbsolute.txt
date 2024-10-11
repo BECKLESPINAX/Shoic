@@ -1,0 +1,35 @@
+C:\Documents and Settings\BlackCrystal™\Escritorio\Anonymous\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\BlackCrystal™\Escritorio\Anonymous\obj\Debug\LOIC.frmMain.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\Anonymous\obj\Debug\LOIC.Properties.Resources.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\Anonymous\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\Anonymous\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\obj\Debug\LOIC.frmMain.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\obj\Debug\LOIC.Properties.Resources.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\obj\Debug\GenerateResource.read.4.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\bin\Debug\LOIC.exe
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\bin\Debug\LOIC.pdb
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\obj\Debug\LOIC.exe
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\obj\Debug\LOIC.pdb
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\bin\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\obj\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\obj\Debug\LOIC.csproj.ResolveComReference.cache
+C:\Documents and Settings\BlackCrystal™\Escritorio\Cosas para C#\Anonymous\obj\Debug\GenerateResource.read.2.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\LOIC.exe
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\LOIC.pdb
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\LOIC.csproj.ResolveComReference.cache
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\LOIC.frmMain.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\LOIC.Properties.Resources.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\LOIC.VentanaPrincipal.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\GenerateResource.read.2.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\GenerateResource.read.4.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\LOIC.exe
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\LOIC.pdb
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\LOIC.VentanaAcercaDe.resources

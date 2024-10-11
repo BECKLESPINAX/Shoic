@@ -1,0 +1,56 @@
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.csproj.ResolveComReference.cache
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.VentanaAcercaDe.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.VentanaPrincipal.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\SHOIC.exe
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\SHOIC.pdb
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.exe
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.pdb
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\sq-AL\SHOIC.resources.dll
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.VentanaAcercaDe.sq-AL.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\sq-AL\SHOIC.resources.dll
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.Properties.Resources.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\System.Data.SQLite.pdb
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\SHOIC.exe.config
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.VentanaConfiguracion.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.frmWtf.resources
+C:\Documents and Settings\BlackCrystal™\Escritorio\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.VentanaHTTPFlooderSHOICAccion.resources
+E:\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\SHOIC.exe.config
+E:\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\SHOIC.exe
+E:\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\SHOIC.pdb
+E:\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\sq-AL\SHOIC.resources.dll
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\ResolveAssemblyReference.cache
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.frmWtf.resources
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.Properties.Resources.resources
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.VentanaAcercaDe.resources
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.VentanaConfiguracion.resources
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.VentanaHTTPFlooderSHOICAccion.resources
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.VentanaPrincipal.resources
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.VentanaAcercaDe.sq-AL.resources
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\GenerateResource.read.1.tlog
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\GenerateResource.write.1.tlog
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\sq-AL\SHOIC.resources.dll
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.exe
+E:\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.pdb
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.WindowSHOIC.resources
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.Properties.Resources.resources
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.WindowAbout.resources
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.WindowHelp.resources
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.WindowConfiguration.resources
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.WindowOptionHTTPAttack.resources
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.WindowSoldier.resources
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.WindowFirst.resources
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.WindowAbout.sq-AL.resources
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.csproj.GenerateResource.Cache
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\sq-AL\SHOIC.resources.dll
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.exe
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.pdb
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\SHOIC.exe.config
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\SHOIC.exe
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\SHOIC.pdb
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\bin\Debug\sq-AL\SHOIC.resources.dll
+C:\Users\user\Documents\PROYECTOS\Cosas para C#\Anonymous\obj\Debug\SHOIC.csprojResolveAssemblyReference.cache
