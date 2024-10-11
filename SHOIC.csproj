@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{54040692-D1B5-4910-B661-26651BD0EF18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SHOIC</RootNamespace>
+    <AssemblyName>SHOIC</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>bin\Debug\ICONS\Mask.ico</ApplicationIcon>
+    <StartupObject>SHOIC.Program</StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <SourceAnalysisOverrideSettingsFile>C:\Documents and Settings\BlackCrystal™\Datos de programa\ICSharpCode/SharpDevelop4\Settings.SourceAnalysis</SourceAnalysisOverrideSettingsFile>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+    <RunCodeAnalysis>False</RunCodeAnalysis>
+    <RunSourceAnalysis>False</RunSourceAnalysis>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <NoWin32Manifest>False</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>False</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>SHOIC.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <StartAction>Project</StartAction>
+    <StartWorkingDirectory>E:\PROYECTOS\Cosas para C#\Anonymous</StartWorkingDirectory>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <ReferencePath>E:\PROYECTOS\Cosas para C#\Anonymous\</ReferencePath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ReferencePath>E:\PROYECTOS\Cosas para C#\Anonymous\</ReferencePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NAudio">
+      <HintPath>bin\Debug\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>bin\Debug\System.Data.SQLite.DLL</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="WindowSHOIC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowSHOIC.Designer.cs">
+      <DependentUpon>WindowSHOIC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SHOICConnection.cs" />
+    <Compile Include="SHOICDataBase.cs" />
+    <Compile Include="SHOICEngine.cs" />
+    <Compile Include="SHOICProxy.cs" />
+    <Compile Include="SHOICStructure.cs" />
+    <Compile Include="HTTPFlooderSHOIC.cs" />
+    <Compile Include="IFlooder.cs" />
+    <Compile Include="SHOICPing.cs" />
+    <Compile Include="HTTPFlooder.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="WindowSHOIC.resx">
+      <DependentUpon>WindowSHOIC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="WindowAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowAbout.Designer.cs">
+      <DependentUpon>WindowAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowHelp.Designer.cs">
+      <DependentUpon>WindowHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowConfiguration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowConfiguration.Designer.cs">
+      <DependentUpon>WindowConfiguration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowOptionHTTPAttack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowOptionHTTPAttack.Designer.cs">
+      <DependentUpon>WindowOptionHTTPAttack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowSoldier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowSoldier.Designer.cs">
+      <DependentUpon>WindowSoldier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WindowFirst.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WindowFirst.Designer.cs">
+      <DependentUpon>WindowFirst.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XXPFlooder.cs" />
+    <EmbeddedResource Include="WindowAbout.resx">
+      <DependentUpon>WindowAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowAbout.sq-AL.resx">
+      <DependentUpon>WindowAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowHelp.resx">
+      <DependentUpon>WindowHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowConfiguration.resx">
+      <DependentUpon>WindowConfiguration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowOptionHTTPAttack.resx">
+      <DependentUpon>WindowOptionHTTPAttack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowSoldier.resx">
+      <DependentUpon>WindowSoldier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WindowFirst.resx">
+      <DependentUpon>WindowFirst.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\WTF.jpg" />
+    <None Include="Resources\LOIC.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\LOIC.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
